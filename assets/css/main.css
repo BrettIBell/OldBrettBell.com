@@ -8,7 +8,7 @@
 */
 
 html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+iframe, h1, h2, h3, h4, h5, h6, p, p.ref, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -133,6 +133,16 @@ input, select, textarea {
 	p {
 		margin: 0 0 2em 0;
 		font-size: 1.2em;
+	}
+
+	p.ref {
+		margin: 0 0 0.1em 2em;
+		font-size: 1.2em;
+		text-indent: -2em;
+	}
+
+	p.ref:first-line { 
+		text-indent: 0em 
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -2962,7 +2972,7 @@ body {
 			}
 
 
-/* Poptrox */
+/* Poptrox 
 
 	@-moz-keyframes spin {
 		0% {
