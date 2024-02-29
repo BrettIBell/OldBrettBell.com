@@ -8,6 +8,7 @@
 
 	var $window = $(window),
 		$body = $('body'),
+		$menu = $('#menu'),
 		$header = $('#header'),
 		$footer = $('#footer'),
 		$main = $('#main'),
@@ -36,6 +37,19 @@
 				$body.removeClass('is-preload');
 			}, 100);
 		});
+	// Menu.
+	$menu
+	.appendTo($body)
+	.panel({
+		delay: 500,
+		hideOnClick: true,
+		hideOnSwipe: true,
+		resetScroll: true,
+		resetForms: true,
+		side: 'right',
+		target: $body,
+		visibleClass: 'is-menu-visible'
+	});
 
 	// Touch?
 		if (browser.mobile) {
